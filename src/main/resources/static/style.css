@@ -1,0 +1,38 @@
+.body {
+    margin-left: 200px;
+    margin-right: 200px;
+    background-color: rgb(43, 42, 42);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#telemetryData {
+
+}
+
+
+.dataSetContainer {
+    border-radius: 20px;
+    background-color: rgb(82, 77, 77);
+    padding: 20px;
+    > h2 {
+        margin: 0px;
+        text-align: center;
+    }
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#dataContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 250px);
+    gap: 15px;
+    justify-content: center;
+}
+
+.dataLine {
+    display: flex;
+    flex-align: row;
+    justify-content: space-between;
+}

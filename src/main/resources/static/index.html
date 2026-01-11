@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class = "body">
+  <div id = "dataContainer">
+    <div class="dataSetContainer" id="MainPackInfo">
+      <h2>Main Pack</h2>
+
+      <div class = "dataLine">
+        <span>Current: </span> <span id="mainPackCurrent"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Inst Voltage: </span> <span id="instVolt"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Pack Amphours: </span> <span id="packAmp"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Summed V: </span> <span id="summedV"></span>
+      </div>
+
+    </div>
+    <div class="dataSetContainer" id="PackTempInfo">
+      <h2>Pack Temp</h2>
+
+        <div class = "dataLine">
+          <span>Low Temp: </span> <span id="lowTemp"></span>
+        </div>
+
+        <div class = "dataLine">
+          <span>High Temp: </span> <span id="highTemp"></span>
+        </div>
+
+        <div class = "dataLine">
+          <span>Avg Temp: </span> <span id="avgTemp"></span>
+        </div>
+
+    </div>
+    <div class="dataSetContainer" id="PackVoltageInfo">
+      <h2>Pack Voltage</h2>
+
+      <div class = "dataLine">
+        <span>Hi Cell V: </span> <span id="hiCellV"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Low Cell V: </span> <span id="lowCellV"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Avg Cell V: </span> <span id="avgCellV"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Hi Cell ID: </span> <span id="hiCellID"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Low Cell ID: </span> <span id="lowCellID"></span>
+      </div>
+
+    </div>
+    <div class="dataSetContainer" id="DCBus">
+      <h2>DCBus</h2>
+
+      <div class = "dataLine">
+        <span>DC Current: </span> <span id="dcCurrent"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>DC Voltage: </span> <span id="dcVoltage"></span>
+      </div>
+    </div>
+    <div class="dataSetContainer" id="Velocity">
+      <h2>Velocity</h2>
+
+      <div class = "dataLine">
+        <span>Vel: </span> <span id="vel"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Motor RPM: </span> <span id="velMotorRPM"></span>
+      </div>
+    </div>
+    <div class="dataSetContainer" id="Odo&Amp">
+      <h2>Odo&Amp</h2>
+
+      <div class = "dataLine">
+        <span>Amphours: </span> <span id="amphours"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Odo: </span> <span id="odo"></span>
+      </div>
+    </div>
+    <div class="dataSetContainer" id="DriveCMD">
+      <h2>DriveCMD</h2>
+
+      <div class = "dataLine">
+        <span>Motor Current: </span> <span id="motorCurrent"></span>
+      </div>
+
+      <div class = "dataLine">
+        <span>Motor RPM: </span> <span id="driveMotorRPM"></span>
+      </div>
+    </div>
+  </div>
+<script src = "script.js"></script>
+</body>
+</html>
