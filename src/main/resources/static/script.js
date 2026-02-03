@@ -1,5 +1,5 @@
 // Retrieves new telemetry data from the telemetry API
- function getNewData(){
+async function getNewData(){
     // Change API URL when using non-local deployment
     const request = await new Request("http://localhost:8080/getNewData");
 
