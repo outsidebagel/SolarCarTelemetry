@@ -1,3 +1,6 @@
+import { setNewData } from './map/map.js';
+
+
 // Retrieves new telemetry data from the telemetry API
 async function getNewData(){
     // Change API URL when using non-local deployment
@@ -13,12 +16,13 @@ function setNewData(data){
         for (let i = 0; i < data.length; i++){
             document.getElementById(data[i].field).innerText = data[i].value;
         }
+        
+        updateMap(data.latitude, data.longitude);
+        
 }
 
 // Calls the API every 150 ms
 setInterval(getNewData, 150);
-
-
 
 
 

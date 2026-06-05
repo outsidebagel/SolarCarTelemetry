@@ -1,0 +1,33 @@
+Global
+-------------------
+- Lock map on current car gps
+    - Disable lock when user drags map
+    - When lock disables, add button to re-center and lock map on car
+- Icon for solar car
+- 
+
+Toggle View of Current Route
+    - Zoom out map to show entire route w/ snake animation
+
+- Collapsed Bar
+    Toggle View of Current Route
+    - Zoom out map to show entire route w/ snake animation
+    - What layer map is on
+    
+- Initalize map with last know gps coords
+
+
+
+
+Racetrack
+---------------
+
+- When toggled, make map center on race track and not car
+    - If on mobile,  make map center on car itself????
+
+
+
+
+Roadrace
+------------------
+- Take data from ASC route and 
