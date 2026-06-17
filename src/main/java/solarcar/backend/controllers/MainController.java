@@ -1,16 +1,18 @@
 package solarcar.backend.controllers;
 
-import org.springframework.stereotype.Controller;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+import solarcar.backend.services.DB;
 
-// handles requests to the main website (/)
-// returns index.html to the user
-@Controller
+import java.util.ArrayList;
+
+@RestController
 public class MainController {
-
-    @RequestMapping("/")
+    @GetMapping("/")
     public String mainPage(){
         return "index.html";
     }
-
 }
+

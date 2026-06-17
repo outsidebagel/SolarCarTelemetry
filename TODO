@@ -4,7 +4,6 @@ Global
     - Disable lock when user drags map
     - When lock disables, add button to re-center and lock map on car
 - Icon for solar car
-- 
 
 Toggle View of Current Route
     - Zoom out map to show entire route w/ snake animation
@@ -16,9 +15,6 @@ Toggle View of Current Route
     
 - Initalize map with last know gps coords
 
-
-
-
 Racetrack
 ---------------
 
@@ -26,8 +22,19 @@ Racetrack
     - If on mobile,  make map center on car itself????
 
 
-
-
 Roadrace
 ------------------
-- Take data from ASC route and 
+- Take data from ASC route and
+
+
+
+
+
+
+Backend
+-------------------
+- Setup local influx instance 
+    - Setup bucket
+    - Setup
+
+

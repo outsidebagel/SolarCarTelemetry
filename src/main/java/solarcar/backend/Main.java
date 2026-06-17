@@ -5,10 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-public class BackendApplication {
+public class Main {
 
 	public static void main(String[] args) {
-		ApplicationContext a = SpringApplication.run(BackendApplication.class, args);
+		ApplicationContext a = SpringApplication.run(Main.class, args);
 	}
 
 }
