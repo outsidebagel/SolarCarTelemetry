@@ -23,8 +23,6 @@ services:
 
   spring-app:
     container_name: springboot
-    depends_on:
-      - influxdb3-core
     build: .
     ports:
       - 8080:8080

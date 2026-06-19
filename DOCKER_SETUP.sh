@@ -48,7 +48,7 @@ echo "------------------------------------"
 docker compose up -d influxdb3-core
 
 # We must wait for influx to fully start before getting an admin key
-sleep 5
+sleep 15
 
 # Retrieve the admin key and place it in our .env file
 docker exec -i core influxdb3 create token --admin | grep -o -m 1 "apiv3\S*" >> "./apikey.env"
@@ -62,7 +62,7 @@ docker compose up -d
 # echo "------------------------------------"
 
 # We must wait for influx to fully start before running cmds
-sleep 5
+sleep 15
 
 # # Create our DB
 docker exec core influxdb3 create database \
