@@ -1,7 +1,7 @@
 name: Telemetry
 services:
   influxdb3-core:
-    container_name: influxdb
+    container_name: core
     image: influxdb:3-core
     ports:
       - 8181:8181
@@ -14,21 +14,18 @@ services:
 
     volumes:
       - type: bind
-        source: ./influx_data
+        source: ./data
         target: /var/lib/influxdb3/data
 
     env_file:
       - apikey.env
-
     
 
-  # spring-app:
-  #   container_name: springboot
-  #   depends_on:
-  #     - influxdb3-core
-  #   build: .
-  #   ports:
-  #     - 8080:8080
-  #   env_file:
-  #     - APIKEY.env
+  spring-app:
+    container_name: springboot
+    depends_on:
+      - influxdb3-core
+    build: .
+    ports:
+      - 8080:8080
         
