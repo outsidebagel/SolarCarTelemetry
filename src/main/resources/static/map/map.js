@@ -3333,14 +3333,14 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-async function testCarIconMove(){
-  for (let i = 0; i < testCords.length; i++) {
-    updateMap(testCords[i][0], testCords[i][1]);
-    await sleep(500);
-  }
-}
+// async function testCarIconMove(){
+//   for (let i = 0; i < testCords.length; i++) {
+//     updateMap(testCords[i][0], testCords[i][1]);
+//     await sleep(500);
+//   }
+// }
 
 
-testCarIconMove();
+// testCarIconMove();
 
 

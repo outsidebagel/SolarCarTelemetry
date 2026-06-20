@@ -66,7 +66,7 @@ sleep 15
 
 # # Create our DB
 docker exec core influxdb3 create database \
-    --retention-period 90d \
+    --retention-period 5s \
     SOLARCAR
 
 

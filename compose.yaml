@@ -2,7 +2,7 @@ name: Telemetry
 services:
   influxdb3-core:
     container_name: core
-    image: influxdb:3-core
+    image: influxdb:3.10-core
     ports:
       - 8181:8181
     command:
